@@ -5,5 +5,5 @@ Auth:
 #  language: "php" 
 DAST:
   type: "WEB" ## API, dWEB, WEB-ADV
-  URL: "https://bwapp.hakhub.net/"
+  URL: "https://juice-shop.herokuapp.com/"
   auth: "yes"
