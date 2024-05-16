@@ -22,8 +22,8 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: docker
-        run: sudo pip install --extra-index-url https://test.pypi.org/simple/ docker
+        run: pip install --extra-index-url https://test.pypi.org/simple/ docker
       - name: Install packages
-        run: sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.6
+        run: pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.6
       - name: Run scan  
-        run: sudo boman-cli-uat -a run -u https://devapi.boman.ai/v2/ -uid $(id -u):$(id -g) -zap_session_script Juice_Shop_Session_Management.js
+        run: boman-cli-uat -a run -u https://devapi.boman.ai/v2/ -uid $(id -u):$(id -g) -zap_session_script Juice_Shop_Session_Management.js
