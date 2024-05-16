@@ -26,4 +26,4 @@ jobs:
       - name: Install packages
         run: sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.6
       - name: Run scan  
-        run: sudo boman-cli-uat -a run -u https://devapi.boman.ai/v2/
+        run: sudo boman-cli-uat -a run -u https://devapi.boman.ai/v2/ --uid ${id -u}:${id -g}
