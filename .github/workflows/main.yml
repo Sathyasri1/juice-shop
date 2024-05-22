@@ -26,5 +26,5 @@ jobs:
       - name: Install packages
         run: sudo pip install boman-cli
       - name: Run scan  
-        run: sudo boman-cli -a run
-        #run: boman-cli-uat -a run -u https://devapi.boman.ai/v2/ -uid $(id -u):$(id -g) -zap_session_script Juice_Shop_Session_Management.js
+        #run: sudo boman-cli -a run
+        run: sudo boman-cli -a run -zap_session_script Juice_Shop_Session_Management.js
