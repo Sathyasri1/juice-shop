@@ -21,10 +21,11 @@ jobs:
       - uses: actions/checkout@v2
       
       # Runs a single command using the runners shell
-      - name: docker
-        run: pip install --extra-index-url https://test.pypi.org/simple/ docker
+      #- name: docker
+      #  run: pip install --extra-index-url https://test.pypi.org/simple/ docker
       - name: Install packages
         run: sudo pip install boman-cli
       - name: Run scan  
+        run: sudo boman-cli -a run -u https://qa.boman.ai
         #run: sudo boman-cli -a run
-        run: sudo boman-cli -a run -zap_session_script Juice_Shop_Session_Management.js
+        #run: sudo boman-cli -a run -zap_session_script Juice_Shop_Session_Management.js
