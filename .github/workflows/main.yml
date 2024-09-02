@@ -24,9 +24,11 @@ jobs:
       #- name: docker
       #  run: pip install --extra-index-url https://test.pypi.org/simple/ docker
       - name: Install packages
-        run: sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat
+        run: sudo pip install boman-cli
+        #sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat
       - name: Run scan  
-        run: sudo boman-cli-uat -a run -u https://qa.boman.ai
+        run: sudo boman-cli -a run -u https://dashboard.boman.ai/
+        #sudo boman-cli-uat -a run -u https://qa.boman.ai
 
         #run: sudo boman-cli -a run
         #run: sudo boman-cli -a run -zap_session_script Juice_Shop_Session_Management.js
