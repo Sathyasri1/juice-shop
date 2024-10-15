@@ -3,19 +3,19 @@ Auth:
   customer_token: b1de9563-38b8-40d1-80d9-62b88af4749b #"8be1c3ed-fac9-4948-adfd-30a7ff6a3b02" #"6adf1fb5-cba2-4a30-bf64-6e11d8e99fdc" #"70b76e8f-ad96-49b9-ad5d-cf1389168167"    #"d8a90f5c-b4ed-40ea-a83d-7a4bcb103bc0"       
 SAST:
  language: "semgrep" 
-#DAST:
-  #type: "WEB" ## API, dWEB, WEB-ADV
-  #URL: "https://juice-shop.herokuapp.com/"
+DAST:
+  type: "WEB" ## API, dWEB, WEB-ADV
+  URL: "https://juice-shop.herokuapp.com/"
   #auth: "yes"
   #type: "WEB"
   #URL: "https://demo.testfire.net/"
-#SCA:
- #language: "js"
+SCA:
+ language: "js"
 
-#Secret_Scan: true
-#container_scan:
-  #type: config
+Secret_Scan: true
+container_scan:
+  type: config
 
-#SBOM: true
-#IAC: true
+SBOM: true
+IAC: true
 
