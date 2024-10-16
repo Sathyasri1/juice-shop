@@ -6,7 +6,7 @@ Auth:
 DAST:
   type: "WEB" ## API, dWEB, WEB-ADV
   URL: "https://juice-shop.herokuapp.com/"
-  auth: "yes"
+  #auth: "yes"
   #type: "WEB"
   #URL: "https://demo.testfire.net/"
 #SCA:
