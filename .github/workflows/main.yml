@@ -24,11 +24,11 @@ jobs:
       #- name: docker
       #  run: pip install --extra-index-url https://test.pypi.org/simple/ docker
       - name: Install packages
-        run: sudo pip install boman-cli
+        run: sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat
         #sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat
         #sudo pip install boman-cli
       - name: Run scan  
-        run: sudo boman-cli -a run -at 53244497-2c6d-4f22-b549-d8cefa6032c0 -ct ad752d56-f8e8-4b3c-a70a-d35abaee21b3
+        run: sudo boman-cli-uat -a run -u https://qa.boman.ai -at b4eb5daf-60f5-4933-8476-9919bfa2508f -ct b1de9563-38b8-40d1-80d9-62b88af4749b
         #sudo boman-cli-uat -a run -u https://qa.boman.ai 
         #-at b4eb5daf-60f5-4933-8476-9919bfa2508f -ct b1de9563-38b8-40d1-80d9-62b88af4749b
         #sudo boman-cli -a run -u https://dashboard.boman.ai/
