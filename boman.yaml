@@ -1,8 +1,8 @@
 Auth:
   project_token: 53244497-2c6d-4f22-b549-d8cefa6032c0 #"45becbd1-0c5c-4d29-833a-e2cbf07f5dc0" #"720caaaa-0d60-4524-864c-4f352132acad" #"4a3bd613-7d29-4619-860c-8a8b362e2cc6"    #"35c4ec30-7b90-4030-a847-a03701b75a6f"        
   customer_token: ad752d56-f8e8-4b3c-a70a-d35abaee21b3 #"8be1c3ed-fac9-4948-adfd-30a7ff6a3b02" #"6adf1fb5-cba2-4a30-bf64-6e11d8e99fdc" #"70b76e8f-ad96-49b9-ad5d-cf1389168167"    #"d8a90f5c-b4ed-40ea-a83d-7a4bcb103bc0"       
-SAST:
- language: "semgrep" 
+#SAST:
+ #language: "semgrep" 
 DAST:
   type: "WEB" ## API, dWEB, WEB-ADV
   URL: "https://juice-shop.herokuapp.com/"
